@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="MPW-0M-7bY"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logonBackdrop" translatesAutoresizingMaskIntoConstraints="NO" id="xbs-zt-hmt"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Running Wager" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJQ-o2-W1q">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="PZW-mK-1MS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="44"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.2627450980392157" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mz0-4h-Tjf" customClass="LoginTextField" customModule="RunningWager" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.92156862745098034" green="0.93725490196078431" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iGM-fL-dwu"/>
+                                </constraints>
+                                <color key="textColor" red="0.32941176470588235" green="0.396078431372549" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-5a-XaE">
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="12"/>
+                                <color key="textColor" red="0.28050729632377625" green="0.33205652236938477" blue="0.40688878297805786" alpha="0.63806668133802813" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8BN-Kh-zCG" customClass="LoginTextField" customModule="RunningWager" customModuleProvider="target">
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XT0-nf-l8p"/>
+                                </constraints>
+                                <color key="textColor" red="0.3294117647" green="0.39607843139999999" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="28"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6B-SK-gv4">
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="12"/>
+                                <color key="textColor" red="0.28050729629999999" green="0.3320565224" blue="0.40688878299999998" alpha="0.63806668129999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xer-Z7-Emm">
+                                <frame key="frameInset" minX="72" minY="440" width="60" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8BN-Kh-zCG" firstAttribute="trailing" secondItem="Mz0-4h-Tjf" secondAttribute="trailing" id="0W0-ug-Kb5"/>
+                            <constraint firstItem="xbs-zt-hmt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="3BE-FR-6Jk"/>
+                            <constraint firstItem="Mz0-4h-Tjf" firstAttribute="width" secondItem="aJQ-o2-W1q" secondAttribute="width" constant="-26" id="3Tp-qR-XVg"/>
+                            <constraint firstItem="aJQ-o2-W1q" firstAttribute="centerX" secondItem="MPW-0M-7bY" secondAttribute="centerX" id="Bs9-NI-jQ3"/>
+                            <constraint firstItem="aJQ-o2-W1q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="205" id="ByR-1j-iPc"/>
+                            <constraint firstItem="MPW-0M-7bY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CIb-ZD-la8"/>
+                            <constraint firstAttribute="trailing" secondItem="xbs-zt-hmt" secondAttribute="trailing" constant="25" id="DTd-rM-P0b"/>
+                            <constraint firstItem="Mz0-4h-Tjf" firstAttribute="centerX" secondItem="aJQ-o2-W1q" secondAttribute="centerX" id="FmS-Yo-4vA"/>
+                            <constraint firstItem="N6B-SK-gv4" firstAttribute="leading" secondItem="rA1-5a-XaE" secondAttribute="leading" id="IGu-Ng-zM2"/>
+                            <constraint firstItem="8BN-Kh-zCG" firstAttribute="top" secondItem="Mz0-4h-Tjf" secondAttribute="top" constant="69" id="KnU-pB-CYF"/>
+                            <constraint firstItem="xbs-zt-hmt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N2s-3m-FnO"/>
+                            <constraint firstItem="MPW-0M-7bY" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QZz-ap-HYx"/>
+                            <constraint firstItem="MPW-0M-7bY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="WZF-bR-Xaj"/>
+                            <constraint firstItem="N6B-SK-gv4" firstAttribute="top" secondItem="8BN-Kh-zCG" secondAttribute="top" constant="1" id="XBy-kC-XD9"/>
+                            <constraint firstItem="Mz0-4h-Tjf" firstAttribute="top" secondItem="aJQ-o2-W1q" secondAttribute="bottom" constant="8" id="aVp-TS-sJ0"/>
+                            <constraint firstItem="rA1-5a-XaE" firstAttribute="leading" secondItem="Mz0-4h-Tjf" secondAttribute="leading" constant="10" id="jBi-N1-1Pr"/>
+                            <constraint firstItem="MPW-0M-7bY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="oBJ-rU-6VP"/>
+                            <constraint firstItem="N6B-SK-gv4" firstAttribute="leading" secondItem="8BN-Kh-zCG" secondAttribute="leading" constant="10" id="scg-gE-JRU"/>
+                            <constraint firstItem="xbs-zt-hmt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tL0-VG-hxo"/>
+                            <constraint firstItem="rA1-5a-XaE" firstAttribute="top" secondItem="Mz0-4h-Tjf" secondAttribute="top" constant="1" id="tyK-T3-2KW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="137.18140929535232"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logonBackdrop" width="613" height="744"/>
+        <image name="logonBackground" width="781" height="1390"/>
+    </resources>
 </document>

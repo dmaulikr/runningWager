@@ -12,6 +12,7 @@
 		926A46501DCE588F0046D5E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A464E1DCE588F0046D5E9 /* Main.storyboard */; };
 		926A46521DCE588F0046D5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926A46511DCE588F0046D5E9 /* Assets.xcassets */; };
 		926A46551DCE588F0046D5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A46531DCE588F0046D5E9 /* LaunchScreen.storyboard */; };
+		92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D863B51DCE605100C5EF06 /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		926A46511DCE588F0046D5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926A46541DCE588F0046D5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		926A46561DCE588F0046D5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D863B51DCE605100C5EF06 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				926A464A1DCE588F0046D5E9 /* AppDelegate.swift */,
 				926A464C1DCE588F0046D5E9 /* ViewController.swift */,
+				92D863B51DCE605100C5EF06 /* LoginTextField.swift */,
 				926A464E1DCE588F0046D5E9 /* Main.storyboard */,
 				926A46511DCE588F0046D5E9 /* Assets.xcassets */,
 				926A46531DCE588F0046D5E9 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */,
 				926A464D1DCE588F0046D5E9 /* ViewController.swift in Sources */,
 				926A464B1DCE588F0046D5E9 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +304,7 @@
 				926A465B1DCE588F0046D5E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
