@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-426" y="2"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation View Controller-->
         <scene sceneID="1bA-n2-DKO">
             <objects>
-                <viewController id="Iua-5o-MdS" sceneMemberID="viewController">
+                <viewController id="Iua-5o-MdS" customClass="NavigationViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vps-Az-JW7"/>
                         <viewControllerLayoutGuide type="bottom" id="OYF-bc-LKn"/>
@@ -216,6 +216,9 @@
                             <constraint firstItem="gA3-if-VHe" firstAttribute="leading" secondItem="XfK-HP-aH9" secondAttribute="leadingMargin" constant="74" id="wyw-Kk-Xv9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="username" destination="nqn-Md-0t1" id="amE-nz-DcQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6nF-jq-YgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

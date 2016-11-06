@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var model = Model()
 
     @IBOutlet weak var usernameInput: LoginTextField!
     @IBOutlet weak var passwordInput: LoginTextField!
@@ -18,6 +17,12 @@ class ViewController: UIViewController {
     // When the login button is pushed
     @IBAction func loginButton(_ sender: LoginButton) {
         
+        if let name = usernameInput.text {
+            Model.username = name
+            
+        } else {
+            Model.username = "this shouldn't be here"
+        }
         
         
         
@@ -36,7 +41,6 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
 
 }
 
