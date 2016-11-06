@@ -18,9 +18,7 @@ class ViewController: UIViewController {
     // When the login button is pushed
     @IBAction func loginButton(_ sender: LoginButton) {
         
-        model.name = usernameInput.text!
         
-        performSegue(withIdentifier: "toGoals", sender: self)
         
         
     }
@@ -30,6 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.hideKeyboardWhenTappedAround()
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,11 +11,7 @@ import Foundation
 class Model {
     
     
-    init (){
-        self.name = ""
-    }
     
-    var name: String
     
     
     
