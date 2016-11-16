@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
 
+    @IBOutlet weak var Open: UIBarButtonItem!
     @IBOutlet weak var usernameInput: LoginTextField!
     @IBOutlet weak var passwordInput: LoginTextField!
     
@@ -33,6 +34,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.hideKeyboardWhenTappedAround()
+        
+        // For the view ViewController
+        Open.target = self.revealViewController()
+        Open.action = Selector("revealToggle:")
         
     }
 

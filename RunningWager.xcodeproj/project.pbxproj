@@ -17,6 +17,8 @@
 		92A17B2B1DCF59C60008A6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A17B291DCF59C60008A6EA /* Main.storyboard */; };
 		92A17B381DCF85610008A6EA /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A17B371DCF85610008A6EA /* NavigationViewController.swift */; };
 		92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D863B51DCE605100C5EF06 /* LoginTextField.swift */; };
+		92F2CE241DDBF5720084EB9E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2CE231DDBF5720084EB9E /* SWRevealViewController.m */; };
+		92F2CE261DDBFB0B0084EB9E /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2CE251DDBFB0B0084EB9E /* GoalsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		92A17B2A1DCF59C60008A6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A17B371DCF85610008A6EA /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationViewController.swift; path = ../NavigationViewController.swift; sourceTree = "<group>"; };
 		92D863B51DCE605100C5EF06 /* LoginTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
+		92F2CE211DDBF5720084EB9E /* RunningWager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RunningWager-Bridging-Header.h"; sourceTree = "<group>"; };
+		92F2CE221DDBF5720084EB9E /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		92F2CE231DDBF5720084EB9E /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		92F2CE251DDBFB0B0084EB9E /* GoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +54,7 @@
 		926A463E1DCE588F0046D5E9 = {
 			isa = PBXGroup;
 			children = (
+				92F2CE201DDBF4E40084EB9E /* Supporting Files */,
 				926A46491DCE588F0046D5E9 /* RunningWager */,
 				926A46481DCE588F0046D5E9 /* Products */,
 			);
@@ -75,8 +82,19 @@
 				926A46511DCE588F0046D5E9 /* Assets.xcassets */,
 				926A46531DCE588F0046D5E9 /* LaunchScreen.storyboard */,
 				926A46561DCE588F0046D5E9 /* Info.plist */,
+				92F2CE251DDBFB0B0084EB9E /* GoalsVC.swift */,
 			);
 			path = RunningWager;
+			sourceTree = "<group>";
+		};
+		92F2CE201DDBF4E40084EB9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F2CE221DDBF5720084EB9E /* SWRevealViewController.h */,
+				92F2CE231DDBF5720084EB9E /* SWRevealViewController.m */,
+				92F2CE211DDBF5720084EB9E /* RunningWager-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +174,10 @@
 				92A17B1D1DCEAAD40008A6EA /* Model.swift in Sources */,
 				92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */,
 				923166A11DCE70DB008D28BD /* LoginButton.swift in Sources */,
+				92F2CE241DDBF5720084EB9E /* SWRevealViewController.m in Sources */,
 				926A464D1DCE588F0046D5E9 /* ViewController.swift in Sources */,
 				926A464B1DCE588F0046D5E9 /* AppDelegate.swift in Sources */,
+				92F2CE261DDBFB0B0084EB9E /* GoalsVC.swift in Sources */,
 				92A17B381DCF85610008A6EA /* NavigationViewController.swift in Sources */,
 				92A17B241DCF42A10008A6EA /* UpdatedNavigationItem.swift in Sources */,
 			);
@@ -286,6 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.RunningWager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunningWager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -301,6 +322,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.RunningWager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RunningWager-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
