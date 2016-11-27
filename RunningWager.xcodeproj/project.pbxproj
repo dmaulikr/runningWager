@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		923166A11DCE70DB008D28BD /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923166A01DCE70DB008D28BD /* LoginButton.swift */; };
+		9258C44D1DE8FB620031A575 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9258C44C1DE8FB620031A575 /* GoogleService-Info.plist */; };
+		92594F641DE6B06900C7FF6E /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92594F631DE6B06900C7FF6E /* GenericViewController.swift */; };
 		926A464B1DCE588F0046D5E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A464A1DCE588F0046D5E9 /* AppDelegate.swift */; };
 		926A464D1DCE588F0046D5E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926A464C1DCE588F0046D5E9 /* ViewController.swift */; };
 		926A46521DCE588F0046D5E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926A46511DCE588F0046D5E9 /* Assets.xcassets */; };
 		926A46551DCE588F0046D5E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926A46531DCE588F0046D5E9 /* LaunchScreen.storyboard */; };
+		928369801DEA4DCA00BE40B7 /* WagersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283697F1DEA4DCA00BE40B7 /* WagersTableViewController.swift */; };
+		9287DFEC1DE9195C007C335B /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287DFEB1DE9195C007C335B /* Bet.swift */; };
+		9287DFEE1DE91B0B007C335B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9287DFED1DE91B0B007C335B /* User.swift */; };
 		92A17B1D1DCEAAD40008A6EA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A17B1C1DCEAAD40008A6EA /* Model.swift */; };
 		92A17B241DCF42A10008A6EA /* UpdatedNavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A17B231DCF42A10008A6EA /* UpdatedNavigationItem.swift */; };
 		92A17B2B1DCF59C60008A6EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A17B291DCF59C60008A6EA /* Main.storyboard */; };
@@ -19,16 +24,25 @@
 		92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D863B51DCE605100C5EF06 /* LoginTextField.swift */; };
 		92F2CE241DDBF5720084EB9E /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F2CE231DDBF5720084EB9E /* SWRevealViewController.m */; };
 		92F2CE261DDBFB0B0084EB9E /* GoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2CE251DDBFB0B0084EB9E /* GoalsVC.swift */; };
+		BDB8AB68479E7D3CB35CBC2C /* Pods_RunningWager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F07765D97C5F6F7AFAEE0A7 /* Pods_RunningWager.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F07765D97C5F6F7AFAEE0A7 /* Pods_RunningWager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunningWager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		532656FF13398ADA1A633FC2 /* Pods-RunningWager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningWager.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningWager/Pods-RunningWager.release.xcconfig"; sourceTree = "<group>"; };
+		5D0F1C594721868489D3B90E /* Pods-RunningWager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningWager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunningWager/Pods-RunningWager.debug.xcconfig"; sourceTree = "<group>"; };
 		923166A01DCE70DB008D28BD /* LoginButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		9258C44C1DE8FB620031A575 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		92594F631DE6B06900C7FF6E /* GenericViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		926A46471DCE588F0046D5E9 /* RunningWager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningWager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926A464A1DCE588F0046D5E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		926A464C1DCE588F0046D5E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		926A46511DCE588F0046D5E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		926A46541DCE588F0046D5E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		926A46561DCE588F0046D5E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9283697F1DEA4DCA00BE40B7 /* WagersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WagersTableViewController.swift; sourceTree = "<group>"; };
+		9287DFEB1DE9195C007C335B /* Bet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
+		9287DFED1DE91B0B007C335B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		92A17B1C1DCEAAD40008A6EA /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../Model.swift; sourceTree = "<group>"; };
 		92A17B231DCF42A10008A6EA /* UpdatedNavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpdatedNavigationItem.swift; sourceTree = "<group>"; };
 		92A17B2A1DCF59C60008A6EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,18 +59,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB8AB68479E7D3CB35CBC2C /* Pods_RunningWager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03A9D2474846C2BF9D6DA610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F07765D97C5F6F7AFAEE0A7 /* Pods_RunningWager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04A8B7D5BFE36AA6284EFC0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D0F1C594721868489D3B90E /* Pods-RunningWager.debug.xcconfig */,
+				532656FF13398ADA1A633FC2 /* Pods-RunningWager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		926A463E1DCE588F0046D5E9 = {
 			isa = PBXGroup;
 			children = (
 				92F2CE201DDBF4E40084EB9E /* Supporting Files */,
 				926A46491DCE588F0046D5E9 /* RunningWager */,
 				926A46481DCE588F0046D5E9 /* Products */,
+				04A8B7D5BFE36AA6284EFC0E /* Pods */,
+				03A9D2474846C2BF9D6DA610 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,15 +106,20 @@
 			isa = PBXGroup;
 			children = (
 				92A17B1C1DCEAAD40008A6EA /* Model.swift */,
+				9283697F1DEA4DCA00BE40B7 /* WagersTableViewController.swift */,
 				92A17B371DCF85610008A6EA /* NavigationViewController.swift */,
 				926A464A1DCE588F0046D5E9 /* AppDelegate.swift */,
+				9287DFEB1DE9195C007C335B /* Bet.swift */,
+				9287DFED1DE91B0B007C335B /* User.swift */,
 				926A464C1DCE588F0046D5E9 /* ViewController.swift */,
+				92594F631DE6B06900C7FF6E /* GenericViewController.swift */,
 				92A17B291DCF59C60008A6EA /* Main.storyboard */,
 				92D863B51DCE605100C5EF06 /* LoginTextField.swift */,
 				92A17B231DCF42A10008A6EA /* UpdatedNavigationItem.swift */,
 				923166A01DCE70DB008D28BD /* LoginButton.swift */,
 				926A46511DCE588F0046D5E9 /* Assets.xcassets */,
 				926A46531DCE588F0046D5E9 /* LaunchScreen.storyboard */,
+				9258C44C1DE8FB620031A575 /* GoogleService-Info.plist */,
 				926A46561DCE588F0046D5E9 /* Info.plist */,
 				92F2CE251DDBFB0B0084EB9E /* GoalsVC.swift */,
 			);
@@ -104,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 926A46591DCE588F0046D5E9 /* Build configuration list for PBXNativeTarget "RunningWager" */;
 			buildPhases = (
+				9BD0A68899C00132FFB9462E /* [CP] Check Pods Manifest.lock */,
 				926A46431DCE588F0046D5E9 /* Sources */,
 				926A46441DCE588F0046D5E9 /* Frameworks */,
 				926A46451DCE588F0046D5E9 /* Resources */,
+				D8F03BAD09AB52702A1938E2 /* [CP] Embed Pods Frameworks */,
+				66929116994BF88989B592BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -159,12 +201,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				92A17B2B1DCF59C60008A6EA /* Main.storyboard in Resources */,
+				9258C44D1DE8FB620031A575 /* GoogleService-Info.plist in Resources */,
 				926A46551DCE588F0046D5E9 /* LaunchScreen.storyboard in Resources */,
 				926A46521DCE588F0046D5E9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		66929116994BF88989B592BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunningWager/Pods-RunningWager-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BD0A68899C00132FFB9462E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F03BAD09AB52702A1938E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunningWager/Pods-RunningWager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		926A46431DCE588F0046D5E9 /* Sources */ = {
@@ -173,13 +264,17 @@
 			files = (
 				92A17B1D1DCEAAD40008A6EA /* Model.swift in Sources */,
 				92D863B61DCE605100C5EF06 /* LoginTextField.swift in Sources */,
+				92594F641DE6B06900C7FF6E /* GenericViewController.swift in Sources */,
 				923166A11DCE70DB008D28BD /* LoginButton.swift in Sources */,
 				92F2CE241DDBF5720084EB9E /* SWRevealViewController.m in Sources */,
 				926A464D1DCE588F0046D5E9 /* ViewController.swift in Sources */,
 				926A464B1DCE588F0046D5E9 /* AppDelegate.swift in Sources */,
 				92F2CE261DDBFB0B0084EB9E /* GoalsVC.swift in Sources */,
+				9287DFEE1DE91B0B007C335B /* User.swift in Sources */,
 				92A17B381DCF85610008A6EA /* NavigationViewController.swift in Sources */,
 				92A17B241DCF42A10008A6EA /* UpdatedNavigationItem.swift in Sources */,
+				928369801DEA4DCA00BE40B7 /* WagersTableViewController.swift in Sources */,
+				9287DFEC1DE9195C007C335B /* Bet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,13 +393,14 @@
 		};
 		926A465A1DCE588F0046D5E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D0F1C594721868489D3B90E /* Pods-RunningWager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 53CLKWPSWQ;
 				INFOPLIST_FILE = RunningWager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.RunningWager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsjohnson.RunningWager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RunningWager-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -314,13 +410,14 @@
 		};
 		926A465B1DCE588F0046D5E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532656FF13398ADA1A633FC2 /* Pods-RunningWager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 53CLKWPSWQ;
 				INFOPLIST_FILE = RunningWager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.RunningWager;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zsjohnson.RunningWager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "RunningWager-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

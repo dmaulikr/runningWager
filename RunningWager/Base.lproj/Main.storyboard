@@ -38,7 +38,7 @@
                                 <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-5a-XaE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rA1-5a-XaE">
                                 <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="12"/>
                                 <color key="textColor" red="0.28050729632377625" green="0.33205652236938477" blue="0.40688878297805786" alpha="0.63806668133802813" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,7 +67,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkp-7I-tK3"/>
-                                    <segue destination="9A1-ib-i9O" kind="show" id="cFa-Qf-8Qm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwJ-q6-arT" customClass="LoginButton" customModule="RunningWager" customModuleProvider="target">
@@ -82,6 +81,12 @@
                                     <segue destination="3FM-dn-caK" kind="show" id="1xd-2J-Vq3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P09-iH-yge">
+                                <frame key="frameInset" minX="166" minY="521" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                                <color key="textColor" red="0.29903882741928101" green="0.34988737106323242" blue="0.42387479543685913" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -92,7 +97,9 @@
                             <constraint firstItem="aJQ-o2-W1q" firstAttribute="centerX" secondItem="MPW-0M-7bY" secondAttribute="centerX" id="Bs9-NI-jQ3"/>
                             <constraint firstItem="aJQ-o2-W1q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="ByR-1j-iPc"/>
                             <constraint firstItem="MPW-0M-7bY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CIb-ZD-la8"/>
+                            <constraint firstItem="P09-iH-yge" firstAttribute="centerX" secondItem="MPW-0M-7bY" secondAttribute="centerX" id="Cvm-52-en5"/>
                             <constraint firstAttribute="trailing" secondItem="xbs-zt-hmt" secondAttribute="trailing" constant="25" id="DTd-rM-P0b"/>
+                            <constraint firstItem="P09-iH-yge" firstAttribute="top" secondItem="gwJ-q6-arT" secondAttribute="bottom" constant="39" id="Ezx-L4-Ahr"/>
                             <constraint firstItem="Mz0-4h-Tjf" firstAttribute="centerX" secondItem="aJQ-o2-W1q" secondAttribute="centerX" id="FmS-Yo-4vA"/>
                             <constraint firstItem="N6B-SK-gv4" firstAttribute="leading" secondItem="rA1-5a-XaE" secondAttribute="leading" id="IGu-Ng-zM2"/>
                             <constraint firstItem="8BN-Kh-zCG" firstAttribute="top" secondItem="Mz0-4h-Tjf" secondAttribute="top" constant="69" id="KnU-pB-CYF"/>
@@ -120,17 +127,19 @@
                     <connections>
                         <outlet property="Open" destination="5Vh-Ci-eOw" id="oEL-Zd-cXI"/>
                         <outlet property="passwordInput" destination="8BN-Kh-zCG" id="Uv0-Ah-tN4"/>
+                        <outlet property="statusMsg" destination="P09-iH-yge" id="UCC-qU-RDP"/>
                         <outlet property="usernameInput" destination="Mz0-4h-Tjf" id="Hsu-Go-ysn"/>
+                        <segue destination="9A1-ib-i9O" kind="show" identifier="nextView" id="dIn-SA-Qr0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1308" y="-740"/>
         </scene>
-        <!--Reveal View Controller-->
+        <!--newViewController-->
         <scene sceneID="XYf-Rq-3yy">
             <objects>
-                <viewController id="9A1-ib-i9O" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newViewcontroller" title="newViewController" id="9A1-ib-i9O" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ePW-36-8FC"/>
                         <viewControllerLayoutGuide type="bottom" id="UkV-sx-vuH"/>
@@ -138,32 +147,25 @@
                     <view key="view" contentMode="scaleToFill" id="Roj-qz-wa1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Navigation Bar Background" translatesAutoresizingMaskIntoConstraints="NO" id="2CY-tr-wJG"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2CY-tr-wJG" firstAttribute="top" secondItem="ePW-36-8FC" secondAttribute="bottom" id="35K-4Z-bns"/>
+                            <constraint firstItem="2CY-tr-wJG" firstAttribute="width" secondItem="Roj-qz-wa1" secondAttribute="width" id="5g7-Dg-Lfp"/>
+                            <constraint firstItem="2CY-tr-wJG" firstAttribute="centerX" secondItem="Roj-qz-wa1" secondAttribute="centerX" id="7jE-uu-0X9"/>
+                            <constraint firstItem="2CY-tr-wJG" firstAttribute="height" secondItem="Roj-qz-wa1" secondAttribute="height" id="FgM-qH-29V"/>
+                        </constraints>
                     </view>
                     <connections>
                         <segue destination="Iua-5o-MdS" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="xZw-QV-ffu"/>
-                        <segue destination="THB-Vu-Mib" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="fjQ-Ln-RSH"/>
+                        <segue destination="btJ-wp-XuD" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="eEK-cW-hQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UNO-k1-FBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-374" y="-683"/>
-        </scene>
-        <!--Today's Goals-->
-        <scene sceneID="VO3-F6-Hme">
-            <objects>
-                <navigationController storyboardIdentifier="sw_front" title="Today's Goals" id="THB-Vu-Mib" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZMo-i7-4PQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="btJ-wp-XuD" kind="relationship" relationship="rootViewController" id="bgy-wD-gdl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Cvh-4A-4kM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="609" y="-309"/>
         </scene>
         <!--Today's Goals-->
         <scene sceneID="OX5-Cb-Q3H">
@@ -176,6 +178,15 @@
                     <view key="view" contentMode="scaleToFill" id="FHf-wf-kug">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg4-Fz-Ury">
+                                <frame key="frameInset" minX="232" minY="457" width="33" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Today's Goals" id="P7G-yb-2sP">
@@ -184,6 +195,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="hga-8M-OJy" id="T3T-AX-9YV"/>
+                        <outlet property="status" destination="kg4-Fz-Ury" id="XlI-Uj-xze"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zEj-DV-zRe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -217,6 +229,9 @@
                                 <state key="normal" title="ZACH JOHNSON">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="btJ-wp-XuD" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="xbi-84-R9W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX2-IZ-FH0">
                                 <constraints>
@@ -227,6 +242,9 @@
                                 <state key="normal" title="MY WAGERS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yXK-f8-vat" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="gKM-7c-WlF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgC-fa-fSA">
                                 <constraints>
@@ -237,6 +255,9 @@
                                 <state key="normal" title="HISTORY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IGI-X0-nKh" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="a3b-2C-GsS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUY-1g-3AJ">
                                 <constraints>
@@ -247,6 +268,9 @@
                                 <state key="normal" title="SETTINGS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Er0-uq-Qmq" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="nQd-ay-2JN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gA3-if-VHe">
                                 <constraints>
@@ -257,6 +281,9 @@
                                 <state key="normal" title="LOGOUT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OUY-tM-lW4"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-Ut-8KS">
                                 <constraints>
@@ -297,7 +324,7 @@
         <!--GoalsViewController-->
         <scene sceneID="VtS-pv-JKo">
             <objects>
-                <viewController storyboardIdentifier="asdf" title="Today's Goals" id="3FM-dn-caK" userLabel="GoalsViewController" customClass="GoalsVC" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="asdf" title="Today's Goals" id="3FM-dn-caK" userLabel="GoalsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xFN-XM-keG"/>
                         <viewControllerLayoutGuide type="bottom" id="SUx-cc-MX2"/>
@@ -404,12 +431,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtF-64-LMz" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="Mbz-xg-yBk"/>
             </objects>
-            <point key="canvasLocation" x="-273" y="74"/>
+            <point key="canvasLocation" x="-735" y="226"/>
         </scene>
         <!--GoalsViewController-->
         <scene sceneID="aLa-it-p6U">
             <objects>
-                <viewController storyboardIdentifier="myWagers" title="My Wagers" id="COI-Ze-hqw" userLabel="GoalsViewController" customClass="GoalsViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="myWagers" title="My Wagers" id="COI-Ze-hqw" userLabel="GoalsViewController" customClass="WagersTableViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Fa-aP-btT"/>
                         <viewControllerLayoutGuide type="bottom" id="sqC-AY-grp"/>
@@ -433,12 +460,28 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pBD-bx-3dX">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="V5R-NN-06v">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cells" textLabel="tVB-tc-3OL" detailTextLabel="dow-SH-Stl" style="IBUITableViewCellStyleSubtitle" id="V5R-NN-06v">
+                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="V5R-NN-06v" id="qnx-se-QsA">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="1000" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tVB-tc-3OL">
+                                                    <frame key="frameInset" minX="164" minY="4" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dow-SH-Stl">
+                                                    <frame key="frameInset" minX="164" minY="25" width="44" height="15"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -456,20 +499,123 @@
                             <constraint firstItem="pBD-bx-3dX" firstAttribute="top" secondItem="QqR-oL-wqf" secondAttribute="bottom" constant="10" id="qbZ-yc-DAZ"/>
                             <constraint firstItem="pBD-bx-3dX" firstAttribute="width" secondItem="xGa-yL-jpH" secondAttribute="width" id="yVl-fK-etf"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="goL-fJ-Gtu" appends="YES" id="Mnv-Sp-BeI"/>
-                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k63-Kn-1GL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="goL-fJ-Gtu"/>
             </objects>
-            <point key="canvasLocation" x="1463" y="-1426"/>
+            <point key="canvasLocation" x="1686" y="-2251"/>
+        </scene>
+        <!--My Wagers-->
+        <scene sceneID="dqW-qj-6BE">
+            <objects>
+                <tableViewController id="AIA-B4-UOE" customClass="WagersTableViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vjU-v7-X6V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cells" textLabel="8q8-3h-Y0x" detailTextLabel="lgX-fA-mxn" style="IBUITableViewCellStyleSubtitle" id="v2k-nt-B5l">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v2k-nt-B5l" id="cOq-tT-E3U">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8q8-3h-Y0x">
+                                            <frame key="frameInset" minX="15" minY="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lgX-fA-mxn">
+                                            <frame key="frameInset" minX="15" minY="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AIA-B4-UOE" id="md6-Xx-eFq"/>
+                            <outlet property="delegate" destination="AIA-B4-UOE" id="rj4-vt-bEl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Wagers" id="ngM-rQ-ALg">
+                        <barButtonItem key="backBarButtonItem" title="back" id="evr-ru-eDY"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="4sj-gL-KTg">
+                            <connections>
+                                <action selector="addWager:" destination="AIA-B4-UOE" id="FDn-AK-NeE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="distance" destination="UrD-SK-C3Y" id="mLE-LE-2jM"/>
+                        <outlet property="newBetView" destination="WVD-fd-5pa" id="Jrw-Dm-DTO"/>
+                        <outlet property="timeTextField" destination="Pw3-5o-och" id="x0I-X1-lg6"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DiL-OR-xGD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="WVD-fd-5pa">
+                    <rect key="frame" x="0.0" y="0.0" width="314" height="287"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UrD-SK-C3Y">
+                            <frame key="frameInset" minX="52" minY="87" width="211" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a time in seconds" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pw3-5o-och">
+                            <frame key="frameInset" minX="52" minY="147" width="211" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2v-R5-P6i">
+                            <frame key="frameInset" minX="52" minY="62" width="67" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3K-sV-gDN">
+                            <frame key="frameInset" minX="52" minY="125" width="67" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wC-f8-KgG">
+                            <frame key="frameInset" minX="119" minY="213" width="76" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Submit Bet"/>
+                            <connections>
+                                <action selector="submitBet:" destination="AIA-B4-UOE" eventType="touchUpInside" id="r8u-vi-MN7"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a new bet:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qsb-Bj-dDa">
+                            <frame key="frameInset" minX="84" minY="20" width="146" height="34"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="OriyaSangamMN" family="Oriya Sangam MN" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.59999999999999998" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="4484" y="-2251.1244377811095"/>
         </scene>
         <!--GoalsViewController-->
         <scene sceneID="GGL-nJ-8Zj">
             <objects>
-                <viewController storyboardIdentifier="history" title="History" id="IGI-X0-nKh" userLabel="GoalsViewController" customClass="GoalsViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="history" title="History" id="IGI-X0-nKh" userLabel="GoalsViewController" customClass="GenergicViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FHt-yw-Iuz"/>
                         <viewControllerLayoutGuide type="bottom" id="k0H-8Q-Xwe"/>
@@ -478,7 +624,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRb-M8-beF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRb-M8-beF">
                                 <fontDescription key="fontDescription" name="OriyaSangamMN-Bold" family="Oriya Sangam MN" pointSize="31"/>
                                 <color key="textColor" red="0.21394515040000001" green="0.26150402430000003" blue="0.33215570449999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -494,10 +640,10 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="IPz-vh-k6A">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="1000" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IPz-vh-k6A" id="Hh5-Yb-JWv">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="1000" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -524,12 +670,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JeE-rv-yuk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="KwP-Z2-aAu"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="250"/>
+            <point key="canvasLocation" x="2593" y="-1524"/>
         </scene>
         <!--GoalsViewController-->
         <scene sceneID="TbC-Uc-exx">
             <objects>
-                <viewController storyboardIdentifier="settings" title="Settings" id="Er0-uq-Qmq" userLabel="GoalsViewController" customClass="GoalsViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="settings" title="Settings" id="Er0-uq-Qmq" userLabel="GoalsViewController" customClass="GenergicViewController" customModule="RunningWager" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hre-2S-Ygh"/>
                         <viewControllerLayoutGuide type="bottom" id="zqL-jo-oGx"/>
@@ -639,24 +785,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="15Z-dy-r0H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="a3s-F3-ZD5"/>
             </objects>
-            <point key="canvasLocation" x="2593" y="1040"/>
+            <point key="canvasLocation" x="2593" y="-765"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="myj-Mx-NVk">
+        <!--Navigation Controller-->
+        <scene sceneID="XZI-0X-6Rh">
             <objects>
-                <viewController id="I1O-57-tMg" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Fzt-FX-jYU"/>
-                        <viewControllerLayoutGuide type="bottom" id="U35-iq-Yvp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AKW-PP-tYa">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ybF-zj-Nql" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yXK-f8-vat" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x0X-eu-KA7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="AIA-B4-UOE" kind="relationship" relationship="rootViewController" id="Cae-fU-LPI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKi-e2-v5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="3276" y="-2251"/>
         </scene>
     </scenes>
     <resources>
@@ -667,4 +814,7 @@
         <image name="profilePic" width="167" height="167"/>
         <image name="settingsHamburger" width="49" height="43"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xbi-84-R9W"/>
+    </inferredMetricsTieBreakers>
 </document>

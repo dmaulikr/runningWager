@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class NavigationViewController: UIViewController {
 
@@ -17,13 +18,37 @@ class NavigationViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        username.setTitle(Model.username.capitalized, for: UIControlState.normal)
+        setName()
+        self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setName()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func setName() {
+        var newUsername: String = ""
+        
+        Model.dbRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            newUsername += value?["name"] as? String ?? "fook u"
+            
+            self.username.setTitle(newUsername, for: UIControlState.normal)
+            
+            Model.name = newUsername
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
+        
+        
     }
     
 
