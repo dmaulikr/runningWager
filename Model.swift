@@ -24,7 +24,14 @@ class Model {
         
     }
     
-    
+    static func resetModel() {
+        username = ""
+        password = ""
+        user = nil
+        userID = ""
+        dbRef = FIRDatabase.database().reference()
+        name = ""
+    }
     
     func setUsername(name: String){
         Model.username = name

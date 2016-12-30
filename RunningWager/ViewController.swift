@@ -19,10 +19,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var statusMsg: UILabel!
     
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        
+            
+        try! FIRAuth.auth()?.signOut()
+            
+        Model.resetModel()
+        
+        
+        
+        
+        
+        
+    }
     
     // When the login button is pushed
     @IBAction func loginButton(_ sender: LoginButton) {
+        
         
         
         
@@ -47,23 +60,55 @@ class ViewController: UIViewController {
                     }
                     
                     if numCharactersPassword != 0 {
-                        FIRAuth.auth()?.signIn(withEmail: name, password: password, completion: nil)
                         
-                        
-                        if let user = FIRAuth.auth()?.currentUser {
-                            Model.user = user
+                        if (sender.titleLabel?.text == "LOGIN") {
+                            FIRAuth.auth()?.signIn(withEmail: name, password: password) { (user, error) in
+                                
+                                if error != nil {
+                                    
+                                    if let errCode = FIRAuthErrorCode(rawValue: error!._code) {
+                                        
+                                        switch errCode {
+                                        case .errorCodeInvalidEmail:
+                                            self.statusMsg.text = ("invalid email")
+                                        case .errorCodeEmailAlreadyInUse:
+                                            self.statusMsg.text = ("in use")
+                                        case .errorCodeWrongPassword:
+                                            self.statusMsg.text = ("invalid password")
+                                        default:
+                                            print("Create User Error: \(error!)")
+                                        }
+                                    }
+                                    
+                                } else {
+                                    self.statusMsg.text = ("all good... continue")
+                                    
+                                    Model.user = user
+                                    Model.userID = user!.uid
+                                    Model.dbRef = FIRDatabase.database().reference().child(Model.userID)
+                                    self.performSegue(withIdentifier: "nextView", sender: nil)
+                                }
+                                
+                            }
                             
-                            Model.userID = user.uid
                         } else {
-                            // No user is signed in.
+                            
+                            FIRAuth.auth()?.createUser(withEmail: name, password: password) { (user, error) in
+                                
+                            }
+                            
+                            statusMsg.text = "bob eat bob world"
+                            
+                            FIRAuth.auth()?.signIn(withEmail: name, password: password, completion: nil)
                         }
                         
-                        Model.dbRef = FIRDatabase.database().reference().child(Model.userID)
                         
-                        performSegue(withIdentifier: "nextView", sender: nil)
+                
                     } else {
                         statusMsg.text = "Please enter a password"
                     }
+                } else {
+                    statusMsg.text = "Please enter a password"
                 }
                 
                 

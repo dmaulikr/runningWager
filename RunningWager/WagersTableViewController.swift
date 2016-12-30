@@ -43,7 +43,7 @@ class WagersTableViewController: UITableViewController {
         
         self.newBetView.removeFromSuperview()
         
-        let newDbRef = dbRef.child(String(describing: date))
+        let newDbRef = Model.dbRef.child("bets").child(String(describing: date))
         
         newDbRef.setValue(newBet.toAnyObject())
         
@@ -58,7 +58,7 @@ class WagersTableViewController: UITableViewController {
 
         
         
-        
+        print("hello I am here 1")
         
         startObservingDB()
         
@@ -72,15 +72,21 @@ class WagersTableViewController: UITableViewController {
     
     func startObservingDB() {
         
+        print("hello I am here 2")
         
         Model.dbRef.child("bets").observe(.value, with: { (snapshot: FIRDataSnapshot) in
             
             
             var newBets = [Bet]()
             
+            var i = 0
+            
+            print("hello I am here 3")
             for bet in snapshot.children {
                 let betObject = Bet(snapshot: bet as! FIRDataSnapshot)
                 newBets.append(betObject)
+                i = i + 1
+                print("we are on number \(i)")
             }
             
             self.bets = newBets
